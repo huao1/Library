@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="library.js" defer></script>
+    <link rel="stylesheet" href="library.css">
+    <link rel="icon" href="./images/library_icon.png">
+    <title>Library</title>
+</head>
+<body>
+    <div class="header-flex-container">
+        <div class="icon-title-container">        
+            <img width="70" height="70" src="https://img.icons8.com/external-soft-fill-juicy-fish/60/external-library-location-pins-soft-fill-soft-fill-juicy-fish.png" alt="external-library-location-pins-soft-fill-soft-fill-juicy-fish"/>
+            <h1 class="title">Library</h1>
+        </div>
+
+        <button class="login">log in</button>
+    </div>
+
+    <div class="body-container">
+        <div class="add-container">
+            <button class="add" id="add">+ Add Books</button>
+        </div>
+        <div class="books-container">
+        </div>
+
+        <dialog id="bookDialog">
+            <form class="form-container" method="post">
+                <h2>New Book</h2>
+                <input type="text" placeholder="Title" name="Title">
+                <input type="text" placeholder="Author" name="Author">
+                <input type="number" placeholder="Pages" name="Pages">
+                <div class="checkbox-container">
+                    <h5>Have you read it?</h5>
+                    <input type="checkbox" id="yes" name="read">
+                    <label for="yes">Yes</label>
+                </div>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </dialog>
+    </div>
+</body>
+</html>
