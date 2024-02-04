@@ -1,11 +1,13 @@
 const myLibrary = [];
 
-function Book(valList) {
+class Book { 
   // the constructor...
-  this.title = valList["Title"]
-  this.author = valList["Author"]
-  this.pages = valList["Pages"]
-  this.read = valList["read"]
+  constructor(valList) {
+    this.title = valList["Title"];
+    this.author = valList["Author"];
+    this.pages = valList["Pages"];
+    this.read = valList["read"];
+  }
 }
 
 function addBookToLibrary(newBook) {
